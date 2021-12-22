@@ -1,7 +1,6 @@
 function countDecorations(bigTree) {
  // ¡No olvides compartir tu solución en redes!
- console.log(Object.entries(flattenObject(bigTree)).filter(e=>e[0].indexOf("value")!=-1).map(e=>e[1]).reduce((a,b)=>a+b))
-  return 0
+  return (Object.entries(flattenObject(bigTree)).filter(e=>e[0].indexOf("value")!=-1).map(e=>e[1]).reduce((a,b)=>a+b))
 }
 
 function flattenObject(ob) {
