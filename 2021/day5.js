@@ -1,12 +1,16 @@
-function sumPairs(numbers, result) {
+function daysToXmas(date) {
   // ¡Y no olvides compartir tu solución en redes!
-  numbers = numbers.map(e=>Number(e))
-  for (let i in numbers){
-    for (let j in numbers){
-      if (numbers[i]+numbers[j]== result && i!=j) return [numbers[i],numbers[j]]
-    }
-  } 
-  return null
-}
+  console.log("debug",parseInt(((new Date("Dec 25, 2021"))-date)/ (1000 * 60 * 60 * 24)) ) 
+  return Math.ceil(((new Date("Dec 25, 2021"))-date)/ (1000 * 60 * 60 * 24)) 
+}  
 
-console.log(sumPairs([0, 2, 2, 3, -1, 1, 5], 6))
+const date = new Date('Dec 25, 2021')
+daysToXmas(date) // 0
+const date1 = new Date('Dec 26, 2021')
+daysToXmas(date1) // -1
+const date2 = new Date('Dec 31, 2021')
+daysToXmas(date2) // -6
+const date3 = new Date('Jan 1, 2022 00:00:01')
+daysToXmas(date3) // -7
+const date4 = new Date('Jan 1, 2022 23:59:59')
+daysToXmas(date4) // -7
