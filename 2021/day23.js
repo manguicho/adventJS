@@ -13,6 +13,8 @@ function canReconfigure(from, to) {
 let from = 'BAL'
 let to   = 'LIB'
 
+
+
 from = 'CON'
 to   = 'JUU'
 from = 'xxxMMM'
