@@ -12,9 +12,6 @@ function canReconfigure(from, to) {
 
 let from = 'BAL'
 let to   = 'LIB'
-
-
-
 from = 'CON'
 to   = 'JUU'
 from = 'xxxMMM'
@@ -25,10 +22,8 @@ from = 'xxxqqqeeefffggg'
 to = 'xxxqqqeeefffgg'
 from = 'MMM'
 to = 'MID'
-
 from = 'abcdefghijkl'
 to = 'lkjihgfedcba'
-
 from = 'xxxMMM'
 to   = 'aaaDDD'
 console.log(canReconfigure(from, to))
